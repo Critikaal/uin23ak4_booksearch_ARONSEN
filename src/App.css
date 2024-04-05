@@ -1,0 +1,114 @@
+body {
+  background-color: #303030;
+  font-family: Arial, Helvetica, sans-serif;
+  max-width: 1280px;
+  margin: auto;
+}
+
+.topnav {
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 1rem;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  margin-bottom: 5px;
+}
+
+
+.topnav .search-container {
+  display: flex;
+}
+
+.topnav input[type=text] {
+  padding: 8px;
+  font-size: 17px;
+  border-radius: 5px;
+  background-color: #303030;
+  color: white;
+  border: solid 1.5px #989898;
+  
+  padding: 1rem;
+  padding-left: 3rem;
+}
+.topnav input[type=text]:hover {
+  border: solid 1.5px #dedede;
+  border-radius: 5px;
+  outline: none;
+}
+.topnav input[type=text]:focus {
+  border: solid 2px #4fc1f5;
+  border-radius: 5px;
+  outline: none;
+}
+
+.topnav .search-container button {
+  background: none;
+  padding: 0;
+  margin-top: 19px;
+  margin-left: 15px;
+  font-size: 20px;
+  border: none;
+  cursor: pointer;
+  position: absolute;
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  color: white;
+  margin: auto;
+}
+
+main img {
+  border-radius: 30px;
+}
+
+main div {
+  background: #3b3f3b;
+  display: flex;  
+  padding: 0rem;
+  margin: 0.5rem;
+  border-radius: 30px;
+}
+
+main div div {
+  padding-left: 1rem;
+  display: block;
+}
+
+main div h2 {
+  width: 400px;
+}
+
+main div a {
+  color: white;
+  background-color: #303030;
+  padding: 0.5rem;
+  border-radius: 15px;
+  font-size: 25px;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav a, .topnav input[type=text], .topnav .search-container button {
+    display: block;
+    text-align: left;
+    margin: 0;
+    padding: 14px;
+  }
+  .topnav button {
+    visibility: hidden;
+  }
+  .topnav input[type=text] {
+    border: 1px solid #ccc;  
+  }
+}
